@@ -389,15 +389,6 @@ h2 {
     width: 100% !important;
     position: static !important;
     padding: 30px 24px !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    gap: 24px !important;
-  }
-
-  /* Profile image inside side-card */
-  .side-card > div:first-child {
-    margin: 0 !important;
   }
 
   /* Typography */
