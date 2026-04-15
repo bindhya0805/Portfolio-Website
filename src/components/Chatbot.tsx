@@ -128,12 +128,8 @@ export default function Chatbot() {
       {/* Chat window */}
       {isOpen && (
         <div
+          className="chatbot-window"
           style={{
-            position: "fixed",
-            bottom: "30px",
-            right: "30px",
-            width: "400px",
-            height: "580px",
             background: "var(--card-bg)",
             borderRadius: "24px",
             boxShadow: "0 24px 80px rgba(0,0,0,0.45)",

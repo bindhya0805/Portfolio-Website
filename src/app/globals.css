@@ -331,6 +331,17 @@ h2 {
 }
 
 /* ================================
+   CHATBOT WINDOW
+================================ */
+.chatbot-window {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 400px;
+  height: 580px;
+}
+
+/* ================================
    TABLET (≤ 900px)
 ================================ */
 @media (max-width: 900px) {
@@ -427,12 +438,24 @@ h2 {
     gap: 12px;
   }
 
-  /* Chatbot: tighter positioning */
+  /* Chatbot */
   .chatbot-trigger {
     bottom: 20px !important;
     right: 20px !important;
     width: 55px !important;
     height: 55px !important;
+  }
+  
+  .chatbot-window {
+    top: 80px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    z-index: 10000;
   }
 }
 
