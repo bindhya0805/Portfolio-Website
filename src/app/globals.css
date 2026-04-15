@@ -227,8 +227,7 @@ h2 {
 ================================ */
 .portfolio-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding: 20px 60px;
   width: 100%;
   position: fixed;
@@ -238,7 +237,14 @@ h2 {
   background: var(--card-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--card-border);
-  flex-wrap: wrap;
+}
+
+/* Always a single row: brand left, nav/hamburger right */
+.header-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .header-brand p {
@@ -355,7 +361,7 @@ h2 {
 @media (max-width: 768px) {
   /* Header */
   .portfolio-header {
-    padding: 16px 20px;
+    padding: 14px 20px;
   }
 
   .header-nav-desktop {
