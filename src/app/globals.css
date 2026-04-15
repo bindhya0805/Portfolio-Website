@@ -447,14 +447,17 @@ h2 {
   }
   
   .chatbot-window {
-    top: 80px;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    width: auto;
-    height: auto;
-    max-height: none;
-    max-width: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+    right: auto;
+    width: 90vw;
+    height: 85vh;
+    height: 85dvh; /* Dynamic viewport height to account for mobile toolbars */
+    max-height: 85vh;
+    max-height: 85dvh;
+    border-radius: 16px;
     z-index: 10000;
   }
 }
