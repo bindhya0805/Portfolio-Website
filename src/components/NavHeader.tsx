@@ -13,10 +13,8 @@ export default function NavHeader() {
       {/* Always-visible top row: brand (left) + desktop nav / hamburger (right) */}
       <div className="header-top-row">
         <div className="header-brand">
-          <p>
-            BINDHYA B{" "}
-            <span className="header-brand-sub">/ B. TECH INFORMATION TECHNOLOGY</span>
-          </p>
+          <p>BINDHYA B</p>
+          <span className="header-brand-sub">/ B. TECH INFORMATION TECHNOLOGY</span>
         </div>
 
         {/* Desktop navigation */}
