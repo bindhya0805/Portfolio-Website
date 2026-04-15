@@ -38,19 +38,19 @@ export const portfolioData = [
   {
     id: "projects-1",
     category: "Projects",
-    tags: ["project", "autism", "machine learning", "ml", "ai", "healthcare", "detection", "classification"],
+    tags: ["project", "projects", "autism", "machine learning", "ml", "ai", "healthcare", "detection", "classification"],
     content: "Project 1: Autism Detection Using Machine Learning (Healthcare / AI). Designed an AI-based diagnostic support system for early identification of Autism Spectrum Disorder (ASD) using behavioral and clinical features. Applied data preprocessing, feature selection, and machine learning classification models. View: https://colab.research.google.com/drive/1pMcTn-l0QTlfWuMITBSTPrvTccPce38S?usp=sharing"
   },
   {
     id: "projects-2",
     category: "Projects",
-    tags: ["project", "smartlane", "lane", "violation", "yolo", "pytorch", "traffic", "smart city", "computer vision", "ai"],
+    tags: ["project", "projects", "smartlane", "lane", "violation", "yolo", "pytorch", "traffic", "smart city", "computer vision", "ai"],
     content: "Project 2: SmartLane - Violation Detection & Automation (Smart City / AI). AI-powered lane violation detection system using YOLOv5 and PyTorch. Trained on a custom dataset to detect five lane conditions, enabling real-time traffic monitoring and automation. View: https://colab.research.google.com/drive/1kjPRS0x_FPNeoBuQfxfuRJtvtf2HusR_?usp=sharing"
   },
   {
     id: "projects-3",
     category: "Projects",
-    tags: ["project", "nexora", "portfolio", "bootstrap", "php", "postgresql", "ajax", "web", "nic"],
+    tags: ["project", "projects", "nexora", "portfolio", "bootstrap", "php", "postgresql", "ajax", "web", "nic"],
     content: "Project 3: Nexora - Business Portfolio Website (Web Development). Built during NIC internship. A responsive Bootstrap-PHP portfolio featuring a consultation booking form, PostgreSQL database integration, and an AJAX-enhanced admin dashboard. View: https://github.com/bindhya0805/Nexora/tree/main/Knightone"
   },
   {
