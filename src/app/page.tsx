@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { Link, Globe, Mail, ExternalLink, Download, MapPin } from "lucide-react";
+import { Link, Mail, ExternalLink, Download, MapPin } from "lucide-react";
 import Chatbot from "@/components/Chatbot";
 import ContactForm from "@/components/ContactForm";
+import NavHeader from "@/components/NavHeader";
 
 export default function Home() {
   const experiences = [
@@ -51,37 +52,10 @@ export default function Home() {
 
   return (
     <div className="profile-container">
-      {/* Fixed Sticky Header */}
-      <header style={{ 
-        display: 'flex', 
-        justifyContent: 'space-between', 
-        alignItems: 'center', 
-        padding: '20px 60px',
-        width: '100%',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        zIndex: 100,
-        background: 'var(--card-bg)',
-        backdropFilter: 'blur(10px)',
-        borderBottom: '1px solid var(--card-border)'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <p style={{ fontWeight: '800', fontSize: '1.2rem' }}>
-            BINDHYA B <span style={{ fontWeight: '400', color: 'var(--text-muted)', fontSize: '1rem', marginLeft: '5px' }}>/ B. TECH INFORMATION TECHNOLOGY</span>
-          </p>
-        </div>
-        <nav style={{ display: 'flex', gap: '30px' }}>
-          <a href="#about" className="nav-link">ABOUT ME</a>
-          <a href="#resume" className="nav-link">RESUME</a>
-          <a href="#skills" className="nav-link">SKILLS</a>
-          <a href="#projects" className="nav-link">PROJECTS</a>
-          <a href="#contact" className="nav-link">CONTACT</a>
-        </nav>
-      </header>
+      <NavHeader />
 
       {/* Main Content Area */}
-      <div className="main-content" style={{ marginTop: '100px' }}>
+      <div className="main-content" style={{ marginTop: '80px' }}>
         {/* Left Side: Sticky Profile Card */}
         <aside className="side-card">
           <div style={{ 
@@ -158,7 +132,7 @@ export default function Home() {
           {/* Resume Section */}
           <div id="resume" style={{ marginBottom: '120px', scrollMarginTop: '120px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '40px' }}>
-              <h2 style={{ fontSize: '3rem', margin: 0 }}>Experience</h2>
+              <h2 className="section-heading" style={{ margin: 0 }}>Experience</h2>
               <a href="/Resume Bindhya B-1.pdf" download="Resume_Bindhya_B.pdf" className="btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Download size={16} /> DOWNLOAD CV
               </a>
@@ -186,7 +160,7 @@ export default function Home() {
 
           {/* Skills Section */}
           <div id="skills" style={{ marginBottom: '120px', scrollMarginTop: '120px' }}>
-            <h2 style={{ fontSize: '3rem', marginBottom: '40px' }}>Skills</h2>
+            <h2 className="section-heading">Skills</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
               {skills.map((skill, i) => (
                 <div key={i} className="dashboard-card" style={{ 
@@ -218,7 +192,7 @@ export default function Home() {
 
           {/* Projects Section */}
           <div id="projects" style={{ marginBottom: '120px', scrollMarginTop: '120px' }}>
-            <h2 style={{ fontSize: '3rem', marginBottom: '40px' }}>Projects</h2>
+            <h2 className="section-heading">Projects</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
               {projects.map((project, i) => (
                 <div key={i} className="dashboard-card" style={{ padding: 0, overflow: 'hidden' }}>
@@ -244,26 +218,20 @@ export default function Home() {
 
           {/* Contact Section */}
           <div id="contact" style={{ marginBottom: '80px', scrollMarginTop: '120px' }}>
-            <h2 style={{ fontSize: '3rem', marginBottom: '40px' }}>Contact</h2>
+            <h2 className="section-heading">Contact</h2>
             <div className="dashboard-card" style={{ maxWidth: '600px' }}>
               <ContactForm />
             </div>
           </div>
       </div>
 
-      <footer style={{ 
-        padding: '60px 20px', 
-        borderTop: '1px solid var(--accent-light)', 
-        textAlign: 'center',
-        background: 'var(--bg-secondary)',
-        marginTop: '60px'
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-           <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>© 2026 Portfolio. Created with passion by BINDHYA B.</p>
-           <div style={{ display: 'flex', gap: '20px' }}>
-              <a href="https://www.linkedin.com/in/bindhya-babu-201680265" target="_blank" rel="noopener noreferrer" className="nav-link">LINKEDIN</a>
-              <a href="https://github.com/bindhya0805" target="_blank" rel="noopener noreferrer" className="nav-link">GITHUB</a>
-           </div>
+      <footer className="portfolio-footer">
+        <div className="footer-inner">
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>© 2026 Portfolio. Created with passion by BINDHYA B.</p>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <a href="https://www.linkedin.com/in/bindhya-babu-201680265" target="_blank" rel="noopener noreferrer" className="nav-link">LINKEDIN</a>
+            <a href="https://github.com/bindhya0805" target="_blank" rel="noopener noreferrer" className="nav-link">GITHUB</a>
+          </div>
         </div>
       </footer>
       <Chatbot />

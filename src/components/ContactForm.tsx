@@ -53,7 +53,7 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       style={{ display: "flex", flexDirection: "column", gap: "20px" }}
     >
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
+      <div className="contact-name-grid">
         <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
           <label style={{ fontSize: "0.8rem", fontWeight: "700" }}>First Name</label>
           <input

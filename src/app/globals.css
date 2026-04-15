@@ -221,3 +221,250 @@ h2 {
   color: var(--foreground);
   background: var(--glass);
 }
+
+/* ================================
+   PORTFOLIO HEADER
+================================ */
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--card-border);
+  flex-wrap: wrap;
+}
+
+.header-brand p {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.header-brand-sub {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.header-nav-desktop {
+  display: flex;
+  gap: 30px;
+}
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--foreground);
+  padding: 6px;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.hamburger-btn:hover {
+  background: var(--bg-secondary);
+}
+
+.header-nav-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 0 4px;
+  border-top: 1px solid var(--card-border);
+  margin-top: 10px;
+}
+
+/* ================================
+   CONTACT FORM GRID
+================================ */
+.contact-name-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* ================================
+   FOOTER
+================================ */
+.portfolio-footer {
+  padding: 60px 20px;
+  border-top: 1px solid var(--accent-light);
+  text-align: center;
+  background: var(--bg-secondary);
+  margin-top: 60px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* ================================
+   SECTION HEADINGS (responsive)
+================================ */
+.section-heading {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+/* ================================
+   TABLET (≤ 900px)
+================================ */
+@media (max-width: 900px) {
+  .portfolio-header {
+    padding: 18px 30px;
+  }
+
+  .main-content {
+    gap: 40px;
+    padding: 30px 20px;
+  }
+
+  .side-card {
+    width: 280px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .section-heading {
+    font-size: 2.4rem;
+  }
+}
+
+/* ================================
+   MOBILE (≤ 768px)
+================================ */
+@media (max-width: 768px) {
+  /* Header */
+  .portfolio-header {
+    padding: 16px 20px;
+  }
+
+  .header-nav-desktop {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .header-nav-mobile {
+    display: flex;
+  }
+
+  /* Layout */
+  .main-content {
+    flex-direction: column !important;
+    gap: 24px !important;
+    padding: 20px 16px !important;
+    margin-top: 80px !important;
+  }
+
+  .side-card {
+    width: 100% !important;
+    position: static !important;
+    padding: 30px 24px !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  /* Profile image inside side-card */
+  .side-card > div:first-child {
+    margin: 0 !important;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .section-heading {
+    font-size: 2rem !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* Buttons */
+  .cta-group {
+    flex-wrap: wrap;
+  }
+
+  /* Cards */
+  .dashboard-card {
+    padding: 20px;
+  }
+
+  /* Contact form: single column on mobile */
+  .contact-name-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  /* Chatbot: tighter positioning */
+  .chatbot-trigger {
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 55px !important;
+    height: 55px !important;
+  }
+}
+
+/* ================================
+   SMALL MOBILE  (≤ 480px)
+================================ */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .section-heading {
+    font-size: 1.8rem !important;
+  }
+
+  .main-content {
+    padding: 16px 12px !important;
+  }
+
+  .side-card {
+    padding: 24px 16px !important;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 10px 22px;
+    font-size: 0.85rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
