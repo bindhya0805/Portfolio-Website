@@ -19,14 +19,9 @@ export default function Resume() {
 
   const education = [
     {
-      school: "University of Technology",
-      degree: "Master of Science in Computer Science",
-      period: "2018 - 2020",
-    },
-    {
-      school: "State Engineering College",
-      degree: "Bachelor of Technology in Software Engineering",
-      period: "2014 - 2018",
+      school: "St. Joseph's College of Engineering",
+      degree: "Bachelor of Technology in Information Technology",
+      period: "2022 - 2026",
     },
   ];
 

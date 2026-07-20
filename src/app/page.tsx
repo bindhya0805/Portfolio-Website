@@ -118,7 +118,7 @@ export default function Home() {
             </div>
 
             <p className="description" style={{ fontSize: '1.2rem', marginBottom: '20px', maxWidth: '650px' }}>
-              A highly motivated and result oriented B. Tech. Information technology student with a passion for Coding, HTML and web development.
+              A highly motivated and result-oriented B.Tech Information Technology student (2022-2026 Batch) at St. Joseph&apos;s College of Engineering, with a passion for Coding, HTML, and web development.
             </p>
             <p className="description" style={{ maxWidth: '650px' }}>
               Seeking a position in the field of IT and it&apos;s applications where I can utilize my strong technical, research and application oriented skills.
