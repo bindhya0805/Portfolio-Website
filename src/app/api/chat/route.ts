@@ -49,7 +49,7 @@ function cosineSimilarity(
 }
 
 /** Retrieve top-k most relevant portfolio chunks for a given query */
-function retrieve(query: string, topK = 4) {
+function retrieve(query: string, topK = 6) {
   const queryTokens = tokenize(query);
   const scored = portfolioData.map((doc) => ({
     doc,
@@ -88,8 +88,10 @@ export async function POST(req: NextRequest) {
     // 2️⃣  AUGMENT — build a grounded system prompt
     const systemPrompt = `You are Bindhya's friendly and professional portfolio AI assistant.
 Answer the user's question using ONLY the context provided below.
-If the answer is not found in the context, politely say you don't have that information and suggest contacting Bindhya directly at bindhya2004ammu@gmail.com.
-Keep your answers concise, warm, and professional. Never mention "context", "chunks", or "RAG" to the user.
+If the user asks about "projects", make sure to list ALL the projects found in the context (Autism Detection, SmartLane, Nexora, etc.).
+Do not confuse projects with her job experience unless explicitly asked.
+If the answer is truly not found in the context at all, politely say you don't have that information and suggest contacting Bindhya directly at bindhya2004ammu@gmail.com.
+Keep responses warm, professional, and well-structured (use bullet points if listing multiple things). Never mention "context", "chunks", or "RAG" to the user.
 
 CONTEXT:
 ${context}`;

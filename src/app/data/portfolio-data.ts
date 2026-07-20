@@ -2,8 +2,8 @@ export const portfolioData = [
   {
     id: "about-1",
     category: "About",
-    tags: ["name", "who", "about", "bindhya", "student", "it", "information technology", "email", "phone", "contact", "college", "mkce"],
-    content: "Bindhya B is a highly motivated and result-oriented B.Tech Information Technology student at M. Kumarasamy College of Engineering (MKCE). She is passionate about coding, HTML, and web development. Contact Email: bindhya2004ammu@gmail.com, Phone: 9150442825. GitHub: github.com/bindhya0805. LinkedIn: linkedin.com/in/bindhya-babu-201680265."
+    tags: ["name", "who", "about", "bindhya", "student", "it", "information technology", "email", "phone", "contact", "college", "sjce", "st. joseph's", "st joseph"],
+    content: "Bindhya B is a highly motivated and result-oriented B.Tech Information Technology student at St. Joseph's College of Engineering. She is passionate about coding, HTML, and web development. Contact Email: bindhya2004ammu@gmail.com, Phone: 9150442825. GitHub: github.com/bindhya0805. LinkedIn: linkedin.com/in/bindhya-babu-201680265."
   },
   {
     id: "experience-1",
